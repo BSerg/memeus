@@ -1,0 +1,70 @@
+@import '~styles/constants';
+
+.select {
+    position: relative;
+    height: 30px;
+    font-size: 12px !important;
+    font-family: $family-open-sans !important;
+    font-weight: $font-weight !important;
+    letter-spacing: 1px;
+    cursor: pointer;
+    &, & div {
+        box-sizing: border-box;
+    }
+
+    img {
+        position: absolute;
+        top: 7.5px;
+        right: 7.5px;
+        height: 15px;
+        width: 15px;
+
+        transition: 200ms 0s ease;
+
+        &.rotated {
+            transform: rotate(180deg);
+        }
+    }
+
+    .select__current, .select__items>div {
+        height: 30px;
+        line-height: 30px;
+        padding: 0 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .select__current {
+        border-bottom: 1px solid black;
+        position: relative;
+        padding-right: 30px;
+    }
+
+    .select__items {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 100%;
+        // padding: 5px 0;
+        background: white;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+
+        transition: 100ms 0s ease;
+        visibility: hidden;
+        opacity: 0;
+
+        &.open {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        &>div {
+            height: 50px;
+            line-height: 50px;
+        }
+    }
+
+    .select__items_item--active {
+        background: #FAFAFA;
+    }
+}

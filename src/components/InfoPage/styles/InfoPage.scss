@@ -1,0 +1,42 @@
+@import "~styles/constants";
+#about {
+    display: block;
+    box-sizing: border-box;
+    padding: 40px 15px;
+
+    max-width: 800px;
+    margin: auto;
+
+    h2 {
+        margin-top: 30px;
+        font-size: 30px;
+        color: $color-primary-dark;
+
+        @media (min-width: 768px) {
+            margin-top: 0;
+        }
+    }
+
+    
+}
+
+.about__question {
+    font-size: 18px;
+    
+    color: $color-primary;
+    @media (min-width: 960px) {
+        font-size: 20px;
+    }
+}
+
+.about__answer {
+    font-size: 12px;
+    line-height: 19px;
+
+    margin-bottom: 30px;
+
+    @media (min-width: 960px) {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}

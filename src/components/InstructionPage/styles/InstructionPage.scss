@@ -1,0 +1,28 @@
+#instruction {
+
+    padding: 10px;
+
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        margin: 20px 0;
+
+        font-size: 14px;
+    }
+
+    img {
+        box-shadow: 0 0 15px rgba(0,0,0,0.7);
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .instruction_screen_container {
+        text-align: center;
+    }
+
+    a {
+        color: black;
+    }
+}

@@ -1,0 +1,66 @@
+@import '~styles/constants';
+.agreement {
+
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 50px;
+
+    &, div {
+        box-sizing: border-box;
+    }
+    @media (min-width: 960px) {
+        margin-top: 0;
+    }
+}
+
+.agreement__menu {
+    display: none;
+    @media (min-width: 960px) {
+        display: block;
+        min-width: 300px;
+        width: 300px;
+    }
+
+    &>div {
+        // background: white;
+        padding: 15px;
+        position: fixed;
+        top: 60px;
+        left: calc(50% - 480px);
+        min-width: 300px;
+        width: 300px;
+
+        div {
+            cursor: pointer;
+            margin: 15px 0;
+            font-size: 13px;
+            font-weight: 700;
+            color: $color-primary-dark;
+        }
+    }
+}
+
+
+.agreement__text {
+    padding: 15px 30px;
+    max-width: 600px;
+    margin: auto;
+
+
+
+    h2 {
+        font-size: 18px;
+        color: $color-primary-dark;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    a {
+        color: $color-primary-dark;
+    }
+}
+

@@ -1,0 +1,36 @@
+@import "~styles/constants";
+
+.nav_menu {
+    width: 100%;
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    font-family: $family-open-sans;
+    font-size: 12px;
+    border-bottom: 1px solid #bcbcbc;
+    margin-bottom: 30px;
+    position: relative;
+    
+
+    a {
+        text-align: center;
+        text-decoration: none;
+        height: 100%;
+        line-height: 30px;
+        flex-grow: 1;
+        position: relative;
+        top: -1px;
+        color: #7f7f7f;
+
+        &.active, &:hover {
+            border-bottom: 2px solid $color-primary-dark;
+            color: $color-primary;
+        }
+
+        @media (min-width: 768px ) {
+            max-width: 175px;
+        }
+
+    }
+}

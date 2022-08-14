@@ -1,0 +1,21 @@
+@import "~styles/constants";
+
+#ban_message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 8;
+}
+
+.ban_message__text {
+    width: 100%;
+    background: white;
+    padding: 30px;
+    box-sizing: border-box;
+    min-height: 100px;
+    text-align: center;
+    color: $color-accent;
+}

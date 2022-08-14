@@ -1,0 +1,121 @@
+<!doctype html>
+<html ⚡>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <title><%- post.caption || ('#' + post.slug) %> | MEMEUS</title>
+    <link rel="canonical" href="<%- canonicalUrl %>"> 
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400,700|Noto+Serif:400,700|Open+Sans:400,700&subset=cyrillic" rel="stylesheet">
+    
+    <style amp-custom>
+        #content {
+            max-width: 600px;
+            box-sizing: border-box;
+            padding: 40px 15px 15px 15px;
+            margin: auto;
+            font-family: "Open Sans";
+        }
+        @media (max-width: 479px) {
+            #content {padding: 40px 0 15px 0;}
+        }
+        h2 {
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 18px;
+            min-height: 18px;
+            letter-spacing: 1px;
+            margin: 0 0 15px 0;
+        }
+
+        .post_likes {
+            height: 40px;
+            margin: 10px 0 0 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            opacity: 0.5;
+        }
+
+        .post_likes amp-img {
+            width: 20px;
+            height: 20px;
+            
+            margin: 0 10px;
+        }
+
+        .post_share {
+            box-sizing: border-box;
+            padding: 30px 10px;
+            display: flex;
+            flex-direction: row;
+            flex-flow: wrap;
+            justify-content: center;
+        }
+
+        .post_share__row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 65px;
+        }
+
+        .post_share__link {
+            background: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            text-align: center;
+            margin: 0 15px;
+            cursor: pointer;
+        }
+        .post_share__link div { height: 100%;}
+
+        .post_share__link, .post_share__link div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .post_share__link svg, .post_share__link img, .post_share__link amp-img {
+            width: 35px;
+            height: 35px;
+        }
+
+        .post_share__link img, .post_share__link amp-img {
+            filter: invert(100%)
+        }
+
+        .post_share__link amp-img svg {
+        }
+
+        .post_share__link__vk { background: #44678d }
+        .post_share__link__fb { background: #3a559f }
+        .post_share__link__twitter { background: #50abf1 }
+        .post_share__link__telegram { background: #61a8de }
+        .post_share__link__whatsapp { background: #1bd741 }
+        .post_share__link__viber { background: #7d3daf }
+    </style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <% if (mediaType === 'animation') { %>
+        <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+    <% } %>
+</head>
+<body>
+    <%- reactHtml %>
+
+    <amp-analytics type="metrika">
+        <script type="application/json">
+            {
+                "vars": {
+                    "counterId": "46675398",
+                    "yaParams": "{\"key\":\"value\"}"
+                }
+            }
+        </script>
+    </amp-analytics>
+</body>
+</html>

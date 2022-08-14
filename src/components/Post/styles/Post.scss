@@ -1,0 +1,228 @@
+@import "~styles/constants";
+
+.post {
+    position: relative;
+    background: white;
+    padding: 15px 0 0 0;
+    margin: auto;
+    font-family: $family-arimo;
+    font-weight: $font-weight-bold;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: $content-width;
+    max-width: 600px;
+    margin-bottom: 30px;
+    min-height: 190px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.34);
+
+    @media (min-width: 480px) {
+        padding: 15px 15px 0 15px;
+    }
+
+    animation: fadeInFromNone 300ms ease-out;
+
+
+    @keyframes fadeInFromNone {
+        0% {
+            opacity: 0;
+        }
+    
+        100% {
+            opacity: 1;
+        }
+    }
+
+
+    a {
+        color: black;
+        text-decoration: none;
+        display: block;
+    }
+    
+    h2 {
+        font-size: 15px;
+        line-height: 25px;
+        min-height: 18px;
+        margin: 0 20px 15px 5px;
+        word-break: break-word;
+        overflow: hidden;
+        box-sizing: border-box;
+
+        @media (min-width: 480px) {
+            margin-left: 0;
+        }
+    }
+}
+
+.post.post--reported {
+    max-height: 100px;
+    overflow: hidden;
+    display: none;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.8);
+    }
+    
+}
+
+.post--single {
+    box-shadow: none;
+}
+
+
+.post__content {
+
+    img, video {
+        display: block;
+        margin: auto;
+        width: 100%;
+        max-width: 600px;
+        object-fit: contain;
+    }
+}
+
+.post__info {
+    margin: 10px 0;
+    height: 14px;
+    color: $color-primary;
+    letter-spacing: 1px;
+    font-size: 11px;
+    opacity: 0.7;
+    font-family: $family-open-sans;
+    font-weight: $font-weight;
+    display: flex;
+    flex-direction: row;
+
+    span {
+        height: 100%;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        div {
+            height: 13px;
+            width: 13px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        &>div {
+            border-radius: 50%;
+            margin-right: 5px;
+            div {
+                width: 100%;
+            }
+        }
+
+    }
+
+    svg {
+        height: 12px;
+        width: 12px;
+        fill: $color-primary;
+    }
+}
+
+.post__footer {
+    font-family: $family-open-sans;
+    height: 60px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    .post__footer_likes {
+        font-size: 14px;
+        letter-spacing: 1px;
+        opacity: 0.5;
+        font-weight: $font-weight;
+        min-width: 30px;
+    }
+
+    .post__footer__divider {
+        height: 100%;
+        width: 1px;
+        background: black;
+        opacity: 0.5;
+        margin: 0 5px;
+    }
+    
+}
+
+.post__content_processing {
+    padding: 30px;
+    text-align: center;
+    font-family: $family-open-sans;
+    font-weight: $font-weight;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+.post.deleted {
+    font-size: 12px;
+    position: relative;
+    min-height: 60px;
+    line-height: 30px;
+    text-align: center;
+    font-family: $family-open-sans;
+    font-weight: $font-weight;
+    color: #7f7f7f;
+    letter-spacing: 1px;
+    padding: 15px 40px;
+
+    span {
+        text-decoration: underline;
+        margin: 0 15px;
+        cursor: pointer;
+    }
+
+    &>div {
+        position: absolute;
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+        right: 10px;
+        top: calc(50% - 12.5px);
+
+        svg {
+            width: 12px;
+            height: 12px;
+            fill: #ccc;
+        }
+    }
+}
+
+.post__video--preview {
+    position: relative;
+    display: block;
+    video {
+        display: block;
+    }
+    &:after {
+        content: "Gif";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        font-size: 35px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+}

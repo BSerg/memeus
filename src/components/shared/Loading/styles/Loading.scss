@@ -1,0 +1,38 @@
+.loading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+
+    div {
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        min-height: 8px;
+        background: #7F7F7F;
+        margin: 0 3px;
+        transition: 200ms 0s ease;
+        animation-duration: 600ms;
+        animation-name: active;
+        animation-iteration-count: infinite;
+
+        &.loading__0 { 
+            animation-delay: 0;
+        }
+        &.loading__1 { 
+            animation-delay: 200ms;
+        }
+        &.loading__2 { 
+            animation-delay: 400ms;
+        }
+    }
+    @keyframes active {
+        from {
+            opacity: 0.8;
+        }
+        to {
+            opacity: 0.1;
+        }
+    }
+}

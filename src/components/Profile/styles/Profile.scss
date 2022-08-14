@@ -1,0 +1,30 @@
+.profile {
+    @media (min-width: 960px) {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.profile_data {
+    margin-top: 15px;
+    box-sizing: border-box;
+    padding: 0;
+    @media (min-width: 960px) {
+        padding: 0 15px;
+    }
+    @media (min-width: 960px) {
+        padding: 0;
+        margin-left: 330px;
+        width: 100%;
+    }
+}
+
+.profile__payments__hint {
+
+    margin: 30px 0;
+    font-size: 13px;
+    line-height: 18px;
+     a{
+         color: black;
+     }
+}

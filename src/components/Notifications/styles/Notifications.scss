@@ -1,0 +1,45 @@
+#notifications {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 960px;
+    z-index: 6;
+    
+
+    @media (min-width: 960px) {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.notification {
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+    margin: auto;
+    line-height: 50px;
+    color: white;
+    background: #333;
+    text-align: center;
+    font-size: 14px;
+    overflow: hidden;
+    transition: 200ms 0s ease-in;
+    opacity: 1;
+    
+    @media (min-width: 600px) {
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 600px;
+    }
+
+
+    &.notification--hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+}

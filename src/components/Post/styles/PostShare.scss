@@ -1,0 +1,119 @@
+@import '~styles/constants';
+
+.post_share {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: $color-primary;
+    box-sizing: border-box;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 200ms 0s ease;
+    input {
+        display: none;
+    }
+
+    &.post_share--open {
+        visibility: visible;
+        opacity: 1;
+    }
+    &.post_share--urldisplay {
+        input {
+            display: block;
+            border: none;
+            padding: 5px;
+            height: 35px;
+            margin: 15px 15px;
+            width: 100%;
+            font-size: 16px;
+            text-align: center;
+            outline: none;
+            border-radius: 0;
+
+            &::selection {
+                color: white;
+                background: $color-primary;
+            }
+
+        }
+        .post_share__row {
+            display: none;
+        }
+
+    }
+}
+
+.post_share__row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+}
+.post_share__link {
+    background: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 15px;
+    cursor: pointer;
+    & div {
+        height: 100%;
+    }
+    &, & div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    svg {
+        width: 35px;
+        height: 35px;
+        fill: white;
+    }
+
+    &.post_share__link--url svg {
+        fill: #333;
+    }
+
+    &.post_share__link__vk { background: #44678d }
+    &.post_share__link__fb { background: #3a559f }
+    &.post_share__link__twitter { background: #50abf1 }
+    &.post_share__link__telegram { background: #61a8de }
+    &.post_share__link__whatsapp { background: #1bd741 }
+    &.post_share__link__viber { background: #7d3daf }
+}
+
+.post_share__close, .post_report__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+
+    & div {
+        height: 100%;
+    }
+    &, & div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.post_report__close svg {
+    fill: black;
+}

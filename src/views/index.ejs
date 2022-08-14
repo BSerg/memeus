@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="<%- locals.defaultLocale || "ru" %>">
+<head>
+    <meta charset="utf-8">
+    <% if (locals.helmet) {%>
+        <%- locals.helmet.title.toString() %>
+        <%- locals.helmet.meta.toString() %>
+        <% if (locals.helmet.link) {%> <%- locals.helmet.link.toString() %> <%} %>
+    <% } %>
+     <% if (!locals.helmet) {%>
+        <title>MEMEUS</title>
+    <% } %>
+    <meta name="verify-admitad" content="b2b4a4dce6" />
+    <meta name="dumedia-verify" content="203cb9a1a553" />
+
+    <meta name="keywords" content="мем,мемы,мемасы,гифки,gif,деньги за мемы,токены,токены за мемы,блокчейн,мемы блокчейн,крипта,эфир,Ethereum,meme,memes,gifs,blockchain,tokens for memes" />
+
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="MEMEUS"/>
+    <meta property="og:url" content="https://memeus.ru"/>
+    <meta property="og:description" content="Мемы, гифки и блокчейн! Memes, gifs and blockchain"/>
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MEMEUS" />
+    <meta name="twitter:description" content="Мемы, гифки и блокчейн! Memes, gifs and blockchain" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"/>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Arimo:400,700|Noto+Serif:400,700|Open+Sans:400,700&subset=cyrillic" rel="stylesheet"> -->
+
+    <% if (manifest && manifest['app.css']) {%><link href="/static/<%- manifest['app.css'] %>" rel="stylesheet"><%}
+       else {%> <link href="/static/bundle.css" rel="stylesheet"> <%}%>
+
+    <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-3176822669525142",
+        enable_page_level_ads: true
+    });
+    </script>
+</head>
+
+<body>
+    <script>
+        <% if (process.env.CAPTCHA_DISABLED) { %> window.__CAPTCHA_DISABLED__ = true; <% } %>
+        <% if (locals.preloadedPost) { %> window.__PRELOADED_POST__ = <%- locals.preloadedPost %>; <% } %>
+        <% if (locals.preloadedItemData) { %> window.__PRELOADED_ITEM_DATA__ = <%- locals.preloadedItemData %>;  <% } %>
+        <% if (locals.defaultLocale) { %> window.__DEFAULT_LOCALE__ = '<%- locals.defaultLocale %>'; <% }  %>
+        <% if (locals.isBanned) {%> window.__USER_BANNED__ = true; <% } %>
+    </script>
+    <div id="app_server"><% if (locals.reactHtml) { %><%- locals.reactHtml %><% } %></div>
+    <div id="app"></div>
+
+    <script src="/static/<% if (locals.manifest && locals.manifest['vendor.js']) {%><%- locals.manifest['vendor.js']%><%} else {%>vendor.js<%}%>"></script>
+    <script src="/static/<% if (locals.manifest && locals.manifest['app.js']) {%><%- locals.manifest['app.js']%><%} else {%>bundle.js<%}%>"></script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter46675398 = new Ya.Metrika({
+                        id:46675398,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true,
+                        trackHash:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/46675398" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = 'https://vk.com/rtrg?p=VK-RTRG-191778-gQ994';</script>
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1933762360220322');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1933762360220322&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+</body>
+</html>

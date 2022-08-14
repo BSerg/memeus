@@ -1,0 +1,30 @@
+.post__comments {
+    margin-top: 30px;
+    width: 100%;
+    &>div {
+        box-sizing: border-box;
+        padding: 0 5px;
+
+        @media (min-width: 480px) {
+            padding: 0 15px;
+        }
+    }
+}
+
+.post__comments__more_button {
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    font-size: 14px;
+    background: #FAFAFAFA;
+    color: #333;
+    cursor: pointer;
+    opacity: 0.8;
+    text-transform: uppercase;
+
+    &:hover, &:active {
+        opacity: 1;
+    }
+}

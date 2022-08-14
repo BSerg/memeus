@@ -1,0 +1,139 @@
+{
+    
+    "language": ["Русский", "English"],
+
+    "whatIs": ["Что такое Мемеус", "What is Memeus"],
+    "signupFast": ["Быстрая регистрация", "Please sign up"],
+    "alreadyLoggedIn": ["Вы уже вошли", "You already logged in"],
+    "logout": ["Выйти", "Logout"],
+
+    "banText": ["Вы были забанены", "You are banned"],
+
+    "adCaption": ["*На правах рекламы", "*Advertisement"],
+
+    "menuLogin": ["Войти", "Login"],
+    "menuLinkTrending": ["Тренды", "Trending"],
+    "menuLinkBest": ["Лучшее", "Best"],
+    "menuLinkFresh": ["Новое", "Fresh"],
+    "menuLinkHot": ["Горячее", "Hot"],
+    "menuLinkAdd": ["Добавить мем", "Add meme"],
+    "menuLinkSubscriptions": ["Подписки", "Subscriptions"],
+
+    "authorSubscriptions": ["Подписки", "Subscriptions"],
+    "authorSubscribers": ["Подписаны", "Subscribers"],
+    "authorSubscriptionsOf" : ["Подписки", "Subscriptions of"],
+    "authorSubscribedTo": ["Подписаны на", "Subscribed to"],
+    "authorSubscribe": ["Подписаться", "Subscribe"],
+    "authorIsSubscribed": ["Вы подписаны", "You are subscribed"],
+    "authorUnsubscribe": ["Отписаться", "Unsubscribe"],
+    "authorListEmpty": ["Список пуст", "Empty"],
+    "authorListMore": ["Еще", "More"],
+    "authorMemes": ["Мемов", "Memes"],
+
+    "profileNicknameLabel": ["Никнейм", "Nickname"],
+    "profileNicknameRules": ["Никнейм может состоять из латинских букв, цифр и симолов \".\", \"_\" и \"-\". Максимум 30 символов", 
+        "Nickname consits of latin letters, numbers and symbols \".\", \"_\" and \"-\". Maximum length is 30"],
+    "profileNicknameError": ["Никнейм не доступен", "Nickname not available"],
+    "profileNicknameSave": ["Сохранить", "Save"],
+
+    "profileReferalLabel": ["Пригласить друга", "Invite a friend"],
+    "profileReferalDescription": [
+        "Пригласите друга и получайте 5% от его прибыли", 
+        "Invite a friend and receive 5% of his/her income"
+    ],
+    "profileReferalHint": [
+        "Отправьте эту ссылку другу и получайте 5% от его прибыли",
+        "Send this url to your friend and receive 5% of his/her income"
+    ],
+    "profileFriendsInvited": ["Друзей приглашено", "Friends invited"],
+    "profileLangaugeLabel": ["Язык", "Language"],
+
+    "manageMenuAccount": ["Аккаунт", "Account"],
+    "manageMenuPayments": ["Платежи", "Payments"],
+    "manageMenuPosts": ["Мои посты", "My posts"],
+
+    "profileReferals": ["Рефералов", "Number of referals"],
+
+    "managePaymentsWithdraw": ["Вывести токены", "Withdraw tokens"],
+    "managePaymentsBalance": ["Баланс", "Balance"],
+    "managePaymentsTransactions": ["Транзакции", "Transactions"],
+    "managePaymentsBalanceTotal": ["Общий баланс", "Total balance"],
+    "managePaymentsBalanceAuthor": ["Плата за авторство", "Author payment"],
+    "managePaymentsBalanceUser": ["Плата читателя", "Reader payment"],
+    "managePaymentsBalanceReferal": ["Плата за рефералов", "Referal payment"],
+    "managePaymentsBalanceWithdrawalMin": ["Минимум выводимых токенов", "Minimum tokens to withdraw"],
+
+    "managePaymentsWithdrawAddress": ["Мой адрес в платформе Waves", "My address on Waves platform"],
+    "managePaymentsWithdrawConfirm": ["Я подтверждаю правильность ввода адреса", "I confirm that the address is correct"],
+    "managePaymentsWithdrawSubmit": ["Вывести", "OK"],
+    "managePaymentsWithdrawCancel": ["Отмена", "Cancel"],
+    "managePaymentsWithdrawalSuccess": ["Токены выведены успешно", "Token withdrawal success"],
+    "managePaymentsWithdrawalError": ["Ошибка вывода токенов", "Token withdrawal error"],
+    "managePaymentsWithdrawalErrorAddressInvalid": ["Неправильный адрес Waves", "Waves address invalid"],
+    "managePaymentsWithdrawalErrorNotEnough": ["Недостаточно токенов", "Not enough tokens"],
+
+    "manageIncomeAuthor": ["Начислено за авторство", "Author payment"],
+    "manageIncomeReader": ["Начислено за чтение", "Reader payment"],
+    "manageIncomeReferal": ["Начислено за рефералов", "Referal payment"],
+    "manageIncome": ["Начислено", "Payment"],
+    "manageIncomeAuthorSimple": ["за мемы", "for memes"],
+    "manageIncomeReaderSimple": ["за чтение", "for reading"],
+    "manageIncomeReferalSimple": ["за рефералов", "for referals"],
+
+    "manageWithdrawalComplete": ["Успешный вывод токенов", "Token withdrawal success"],
+    "manageWithdrawalError": ["Ошибка вывода токенов", "Token withdrawal error"],
+
+    "imageHint": ["Загрузите изображение", "Upload image"],
+    "imageErrorAspectRatio": ["Слишком узкое изображение", "Image is too narrow"],
+    "imageErrorSize": ["Файл слишком большой", "File too big"],
+    "imageCaption": ["Заголовок (не обязательно)", "Caption (optional)"],
+    "imageUrl": ["Или вставьте ссылку", "Or paste URL"],
+    "imagePublish": ["Опубликовать", "Publish"],
+    "imageUploadDisabled": ["Загрузка мемов временно отключена ¯\\_(ツ)_/¯", "Meme upload is temporary disabled ¯\\_(ツ)_/¯"],
+
+    "editorError": ["Ошибка загрузки", "Upload error"],
+    "editorErrorTooManyRequests": ["Слишком много загрузок", "Too many uploads"],
+    "editorRetry": ["Попробовать еще", "Retry"],
+    "editorRetryLater": ["Попробовать позже", "Retry later"],
+
+    "editorImageRules": [
+        "Размер не должен превышать 10Mb. Поддерживаются форматы jpeg, png и gif.", 
+        "Maximum file size is 10Mb. Supported formats are jpeg, png and gif."
+    ],
+
+    "reportReason": ["Укажите причину жалобы", "Choose report reason"],
+    "reportSpam": ["СПАМ/РЕКЛАМА", "SPAM/ADS"],
+    "reportPorn": ["ПОРНОГРАФИЯ", "PORN"],
+    "reportShocking": ["ШОК-КОНТЕНТ", "SHOCKING CONTENT"],
+    "reportExtremism": ["ЭКСТРЕМИЗМ/ТЕРРОРИЗМ", "EXTREMISM/TERRORISM"],
+    "reportInsult": ["ОСКОРБЛЕНИЕ", "INSULT"],
+
+    "postDeleted": ["Удалено", "Deleted"],
+    "postRestore": ["Восстановить", "Restore"],
+    "postReport": ["Пожаловаться", "Report"],
+    "postDelete": ["Удалить", "Delete"],
+    "postShare": ["Поделиться", "Share"],
+    "postProcessing": ["Изображение обрабатывается...", "Processing image..."],
+    "postError": ["Не найдено", "Not found"],
+    "postReportSent": ["Жалоба отправлена", "Report sent"],
+
+    "commentsSay": ["Комментировать", "Comment"],
+    "commentsSend": ["Отправить", "Send"],
+    "commentsRemoveMedia": ["Удалить", "Remove"],
+    "commentsHasMore": ["Еще", "More"],
+    "commentsNew": ["Новых", "New"],
+
+    "errorDefault": ["ОШИБКА. Мы работаем над этой проблемой", "ERROR. We are working on the problem"],
+    "error404": ["Страница не найдена", "Page not found"],
+
+    "notificationUrlCopy": ["Ссылка скопирована", "Url copied"],
+
+    "aboutHeader": ["FAQ", "FAQ"],
+    "linkAgreement": ["Пользовательское соглашение", "User agreement"],
+    "linkConfidentiality": ["Соглашение о конфиденциальности", "Confidentiality agreement"],
+    "linkContact": ["Контакт", "Contact"],
+
+    "paymentsHint": ["Читатели получают 35% дохода сервиса. Деньги делятся  в зависимости от вашей активности на площадке. Авторы получают 55% от общего дохода сервиса. Между авторами деньги делятся в зависимости от того, насколько популярен ваш контент.<p>Вознаграждение начисляется регулярно, для вывода вам потребуется кошелек, зарегистрированный на сайте <a href='https://wavesplatform.com/' target='_blank'>https://wavesplatform.com/</a></p>", 
+        ""],
+    "instructionLink": ["Как вывести токены", "How to withdraw tokens"]
+}

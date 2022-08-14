@@ -1,0 +1,16 @@
+.media_preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 4;
+    img, video {
+        max-width: 95vw;
+    }
+}

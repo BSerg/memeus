@@ -1,0 +1,42 @@
+.profile__management__transaction {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    font-size: 12px;
+    line-height: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0 0 10px 0;
+
+    div {
+        margin: 0 5px;
+    }
+
+    div:first-child {
+        margin: 0 5px 0 0;
+    }
+
+    div:last-child {
+        margin: 0 0 0 5px;
+    }
+
+    div:nth-child(2) {
+        flex-grow: 1;
+    }
+
+    div:nth-child(3) {
+        min-width: 50px;
+        text-align: right;
+    }
+
+}
+
+.profile__payments__instruction_link {
+    a {
+        color: black !important;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    
+}

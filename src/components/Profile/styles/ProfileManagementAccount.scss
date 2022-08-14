@@ -1,0 +1,43 @@
+@import '~styles/constants.scss';
+
+.profile_management_nickname {
+    
+    &>div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    
+}
+
+.profile_management_nickname__save {
+    width: 50%;
+    max-width: 120px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20 10px 0 10px;
+
+    button {
+        width: 100%;
+        height: 30px;
+        border-radius: 0;
+        color: white;
+        background: $color-primary;
+        border: none;
+        cursor: pointer;
+        font-size: 12px;
+        letter-spacing: 1px;
+        outline: none;
+        &:hover {
+            background: $color-primary-dark;
+        }
+    }
+}
+
+.profile_management_nickname__rules {
+    margin: 10px 0 20px 0;
+    line-height: 18px;
+    font-size: 12px;
+}

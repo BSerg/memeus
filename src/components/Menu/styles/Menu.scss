@@ -1,0 +1,246 @@
+@import "~styles/constants";
+
+#menu {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 3;
+    font-family: $family-open-sans;
+    letter-spacing: 1px;
+    font-size: 10px;
+    opacity: 1;
+    transition: 100ms 0s ease;
+    background: rgba(0, 0, 0, 0.5);
+
+    div {
+        box-sizing: border-box;
+    }
+    &.hidden {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    @media (min-width: 768px) {
+        height: 55px;
+        background: $color-primary;
+    }
+}
+
+#menu_content {
+    
+    background: $color-primary;
+    width: 100%;
+    max-width: $content-width;
+    margin: auto;
+    
+    a {
+        text-decoration: none;
+    }
+    
+
+    @media (min-width: 768px) {
+        padding: 0 15px;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+    }
+}
+
+.menu__authorization {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+    margin: 0 0 0 30px;
+
+    .menu__authorization_caption {
+        margin-right: 30px;
+    }
+}
+
+.menu__filler {
+    flex-grow: 1;
+}
+
+.menu__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    max-width: 300px;
+    font-weight: $font-weight-bold;
+    color: white;
+    .avatar {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background: black;
+        margin-right: 15px;
+        font-size: 10px;
+    }
+}
+
+.menu__link {
+    color: white;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    // background: red;
+    border-bottom: 1px solid #000;
+    transition: 400ms 0s ease-out;
+
+    &:last-child {
+        border-bottom: none;
+    }
+    @media (max-height: 568px) {
+        height: 50px;
+    }
+    
+    @media (min-width: 768px) {
+        height: 100%;
+        flex-grow: 1;
+        background: transparent;
+        border: none;
+        &:hover, &.active {
+            background: $color-primary-dark;
+
+        }
+    }
+}
+
+.menu__logo {
+    height: 50px;
+    width: 50px;
+    // background: $color-primary-dark;
+    border-radius: 50%;
+    margin: 2.5px 15px 0 0;
+
+    
+    &, div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    div {
+        width: 100%;
+        height: 100%;
+    }
+    svg {
+        width: 25px;
+        height: 25px;
+        fill: white;
+    }
+}
+
+.menu__header {
+    width: 100%;
+    background: $color-primary-dark;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    .menu__icon_link.unauthorized {
+        position: absolute;
+        right: 0;
+        background: transparent!important;
+        height: 55px!important;
+        top: 35px!important;
+    }
+
+}
+
+
+
+.menu__display {
+    display: block;
+    text-align: center;
+    padding: 30px 0 0 0;
+    font-size: 18px;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    @media (max-height: 568px) {
+        // margin: 10px 0 0 0;
+    }
+    
+    img {
+        display: block;
+        width: 60px;
+        height: 60px;
+        margin: auto;
+        @media (max-height: 568px) {
+            display: none;
+        }
+    }
+    div {
+        color: white;
+        padding: 20px 0 10px 0;
+    }
+}
+
+
+.menu__controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-height: 70px;
+    height: 100%;
+    padding: 15px 0;
+    @media (min-width: 768px) {
+        padding: 0;
+    }
+}
+
+.menu__controls a, .menu__icon_link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 55px;
+    &.active {
+        background: $color-primary-dark;
+    }
+    &:hover {
+        background: $color-primary-dark;
+    }
+    svg {
+        width: 35px;
+        height: 35px;
+        fill: white;
+    }
+
+}
+
+.menu__close {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    svg {
+        width: 20px;
+        height: 20px;
+        fill: white;
+    }
+}
+
+.menu__login_block {
+    border-bottom: 1px solid black;
+}
